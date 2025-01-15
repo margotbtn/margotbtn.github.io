@@ -12,6 +12,13 @@ body {
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
+    display: flex; /* Ajout */
+    flex-direction: column; /* Ajout */
+    min-height: 100vh; /* Ajout */
+}
+
+main {
+    flex: 1; /* Ajout */
 }
 
 /* Header Styles */
@@ -50,7 +57,7 @@ header nav ul li a:hover {
     padding: 50px 20px;
     background: url('../img/ai-background.jpg') no-repeat center center/cover;
     color: white;
-    min-height: 300px; /* Ajuste la hauteur minimale selon les besoins */
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
