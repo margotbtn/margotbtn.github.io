@@ -26,6 +26,7 @@ header {
     background: #005f73;
     color: white;
     padding: 10px 0;
+    height: 60px; /* Hauteur du header */
 }
 
 header nav ul {
@@ -55,15 +56,15 @@ header nav ul li a:hover {
 .hero {
     position: relative;
     text-align: center;
-    min-height: 100vh; /* Assure que la section occupe au moins la hauteur de la fenêtre */
+    height: calc(100vh - 60px); /* Ajuste la hauteur en fonction du header */
     background: url('../img/ai-background.jpg') no-repeat center center;
-    background-size: cover; /* Ajuste l'image pour qu'elle remplisse l'espace */
+    background-size: cover;
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1; /* Place l'image en arrière-plan */
+    z-index: 1;
 }
 
 .hero h1 {
