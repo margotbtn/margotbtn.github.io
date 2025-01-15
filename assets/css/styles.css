@@ -12,7 +12,7 @@ body {
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    min-height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
 }
 
 /* Header Styles */
@@ -20,7 +20,7 @@ header {
     background: #005f73;
     color: white;
     padding: 10px 0;
-    height: 60px; /* Hauteur fixe du header */
+    height: 60px; /* Hauteur du header */
 }
 
 header nav ul {
@@ -50,26 +50,27 @@ header nav ul li a:hover {
 .hero {
     position: relative;
     text-align: center;
-    min-height: 100vh; /* S'assure que la section occupe toute la hauteur de la fenêtre */
+    min-height: 100vh; /* La section prend la hauteur totale de la fenêtre */
     background: url('../img/ai-background.jpg') no-repeat center center;
     background-size: cover;
     color: black;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 0; /* Aucune marge ou padding supplémentaire */
+    align-items: center; /* Centrage vertical et horizontal */
 }
 
 /* Intro Section */
 #intro {
-    background: rgba(0, 95, 115, 0.8); /* Semi-transparent */
+    position: absolute; /* Superposé à l'image */
+    bottom: 20px; /* Placé légèrement au-dessus du bas de l'écran */
+    left: 50%;
+    transform: translateX(-50%); /* Centré horizontalement */
+    background: rgba(0, 95, 115, 0.8); /* Fond semi-transparent */
     color: white;
     padding: 20px;
-    border-radius: 8px; /* Coins arrondis pour un look moderne */
+    border-radius: 8px;
     max-width: 800px;
     text-align: center;
-    margin-top: 20px; /* Espacement entre intro et footer */
 }
 
 #intro h2 {
