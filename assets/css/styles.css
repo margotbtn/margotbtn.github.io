@@ -12,11 +12,7 @@ body {
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* S'assure que le body occupe toute la hauteur de la fenêtre */
-}
-
-main {
-    flex: 1; /* Utilise tout l'espace restant */
+    min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
 }
 
 /* Header Styles */
@@ -54,7 +50,7 @@ header nav ul li a:hover {
 .hero {
     position: relative;
     text-align: center;
-    height: calc(100vh - 60px); /* Occupe l'espace restant après le header */
+    min-height: 100vh; /* S'assure que la section occupe toute la hauteur de la fenêtre */
     background: url('../img/ai-background.jpg') no-repeat center center;
     background-size: cover;
     color: black;
@@ -62,6 +58,7 @@ header nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0; /* Aucune marge ou padding supplémentaire */
 }
 
 /* Intro Section */
@@ -93,5 +90,5 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px; /* Espacement au-dessus du footer */
+    margin-top: auto; /* Force le footer à rester en bas de la page */
 }
