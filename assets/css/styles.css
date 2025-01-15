@@ -50,22 +50,19 @@ header nav ul li a:hover {
 .hero {
     position: relative;
     text-align: center;
-    min-height: 100vh; /* La section prend la hauteur totale de la fenêtre */
+    height: 100vh; /* Occupe toute la hauteur de la fenêtre */
     background: url('../img/ai-background.jpg') no-repeat center center;
-    background-size: cover;
+    background-size: cover; /* Couvre toute la fenêtre */
     color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Centrage vertical et horizontal */
 }
 
 /* Intro Section */
 #intro {
     position: absolute; /* Superposé à l'image */
-    bottom: 20px; /* Placé légèrement au-dessus du bas de l'écran */
+    bottom: 20px; /* Placé juste au-dessus du bas de l'écran */
     left: 50%;
     transform: translateX(-50%); /* Centré horizontalement */
-    background: rgba(0, 95, 115, 0.8); /* Fond semi-transparent */
+    background: rgba(0, 95, 115, 0.7); /* Fond semi-transparent (réduit l'opacité pour voir l'image derrière) */
     color: white;
     padding: 20px;
     border-radius: 8px;
