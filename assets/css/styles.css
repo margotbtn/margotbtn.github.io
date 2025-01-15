@@ -12,7 +12,7 @@ body {
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
+    min-height: 100vh; /* Permet de forcer la hauteur de la page à la taille de la fenêtre */
 }
 
 /* Header Styles */
@@ -20,7 +20,7 @@ header {
     background: #005f73;
     color: white;
     padding: 10px 0;
-    height: 60px; /* Hauteur du header */
+    height: 60px; /* Hauteur fixe du header */
 }
 
 header nav ul {
@@ -50,21 +50,20 @@ header nav ul li a:hover {
 .hero {
     position: relative;
     text-align: center;
-    min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    flex-grow: 1; /* Laissez .hero occuper tout l'espace restant */
     background: url('../img/ai-background.jpg') no-repeat center center;
-    background-size: cover; /* L'image couvre toute la section */
+    background-size: cover;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 60px; /* Décale légèrement le contenu pour ne pas le masquer sous le header */
 }
 
 /* Intro Section */
 #intro {
     position: absolute; /* Superposé à l'image */
-    bottom: 20px; /* Placé juste au-dessus du bas de l'écran */
+    bottom: 20px; /* Placé juste au-dessus du bas de la fenêtre */
     left: 50%;
     transform: translateX(-50%); /* Centré horizontalement */
     background: rgba(0, 95, 115, 0.7); /* Fond semi-transparent */
@@ -93,5 +92,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    margin-top: auto; /* Force le footer à rester en bas de la page */
 }
