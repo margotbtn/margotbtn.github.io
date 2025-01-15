@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
+    height: 100%; /* S'assure que le body prend toute la hauteur */
 }
 
 /* Header Styles */
@@ -50,7 +51,7 @@ header nav ul li a:hover {
 .hero {
     position: relative;
     text-align: center;
-    height: 100vh; /* Occupe toute la hauteur de la fenêtre */
+    height: calc(100vh - 60px); /* Prend la hauteur de la fenêtre moins la hauteur du header */
     background: url('../img/ai-background.jpg') no-repeat center center;
     background-size: cover; /* Couvre toute la fenêtre */
     color: black;
