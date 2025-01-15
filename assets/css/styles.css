@@ -77,9 +77,17 @@ header nav ul li a:hover {
 
 /* Intro Section */
 #intro {
-    padding: 40px 20px;
+    position: absolute;
+    bottom: 100px; /* Place le paragraphe juste au-dessus du footer */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 95, 115, 0.8); /* Semi-transparent */
+    color: white;
+    padding: 20px;
+    border-radius: 8px; /* Coins arrondis pour un look moderne */
+    max-width: 800px;
     text-align: center;
-    background: #e0f7fa;
+    z-index: 2; /* Au-dessus de l'image */
 }
 
 #intro h2 {
@@ -95,9 +103,12 @@ header nav ul li a:hover {
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #005f73;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #005f73; /* Couleur solide, même que le header */
     color: white;
-    font-size: 0.9rem;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 2; /* Toujours au-dessus de l'image */
 }
