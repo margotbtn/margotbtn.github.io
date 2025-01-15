@@ -53,26 +53,30 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
+    position: relative;
     text-align: center;
-    padding: 50px 20px;
-    background: url('../img/ai-background.jpg') no-repeat center center/cover;
-    color: white;
-    height: 100vh; /* Rend la section Hero pleine hauteur */
+    height: 100vh; /* La section occupe exactement la hauteur de la fenêtre */
+    background: url('../img/ai-background.jpg') no-repeat center center;
+    background-size: cover; /* Ajuste l'image pour qu'elle remplisse l'espace */
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1; /* Place l'image en arrière-plan */
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    color: black; /* Titre en noir */
 }
 
 .hero p {
     font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto;
+    color: black; /* Sous-titre en noir */
 }
 
 /* Intro Section */
