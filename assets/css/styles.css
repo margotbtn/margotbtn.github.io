@@ -48,7 +48,7 @@ header nav ul li a:hover {
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background: url('../img/ai-background.webp') no-repeat center center/cover;
+    background: url('../img/ai-background.jpg') no-repeat center center/cover;
     color: white;
     min-height: 300px; /* Ajuste la hauteur minimale selon les besoins */
     display: flex;
