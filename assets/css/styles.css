@@ -57,7 +57,7 @@ header nav ul li a:hover {
     padding: 50px 20px;
     background: url('../img/ai-background.jpg') no-repeat center center/cover;
     color: white;
-    min-height: 300px;
+    height: 100vh; /* Rend la section Hero pleine hauteur */
     display: flex;
     flex-direction: column;
     justify-content: center;
