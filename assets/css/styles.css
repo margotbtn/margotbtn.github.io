@@ -13,7 +13,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
-    height: 100%; /* S'assure que le body prend toute la hauteur */
 }
 
 /* Header Styles */
@@ -51,10 +50,15 @@ header nav ul li a:hover {
 .hero {
     position: relative;
     text-align: center;
-    height: calc(100vh - 60px); /* Prend la hauteur de la fenêtre moins la hauteur du header */
+    min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
     background: url('../img/ai-background.jpg') no-repeat center center;
-    background-size: cover; /* Couvre toute la fenêtre */
+    background-size: cover; /* L'image couvre toute la section */
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px; /* Décale légèrement le contenu pour ne pas le masquer sous le header */
 }
 
 /* Intro Section */
@@ -63,7 +67,7 @@ header nav ul li a:hover {
     bottom: 20px; /* Placé juste au-dessus du bas de l'écran */
     left: 50%;
     transform: translateX(-50%); /* Centré horizontalement */
-    background: rgba(0, 95, 115, 0.7); /* Fond semi-transparent (réduit l'opacité pour voir l'image derrière) */
+    background: rgba(0, 95, 115, 0.7); /* Fond semi-transparent */
     color: white;
     padding: 20px;
     border-radius: 8px;
